@@ -57,8 +57,8 @@
         <Multithreaded>true</Multithreaded>
         <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
         <_TCHARMapping>char</_TCHARMapping>
-        <IncludePath>src\;..\..\..\DLL\converterDLL\;$(IncludePath)</IncludePath>
-        <ILINK_LibraryPath>src\;..\..\..\DLL\converterDLL\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <IncludePath>jsonparser\;src\;..\..\..\DLL\converterDLL\;$(IncludePath)</IncludePath>
+        <ILINK_LibraryPath>jsonparser\;src\;..\..\..\DLL\converterDLL\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <SanitizedProjectName>converter32</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
@@ -101,6 +101,12 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
+        <Debugger_HostApplication>C:\Users\Bence\Documents\DLL\szamologep_cons\console.exe</Debugger_HostApplication>
+        <FinalOutputDir>.</FinalOutputDir>
+        <IncludePath>.\jsonparser;$(IncludePath)</IncludePath>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>(None)</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>
@@ -117,29 +123,29 @@
         <CppCompile Include="converterImp.c">
             <BuildOrder>1</BuildOrder>
         </CppCompile>
-        <CppCompile Include="src\dynamicarray.c">
+        <CppCompile Include="jsonparser\dynamicarray.c">
             <BuildOrder>2</BuildOrder>
         </CppCompile>
-        <None Include="src\dynamicarray.h">
-            <BuildOrder>6</BuildOrder>
-        </None>
-        <CppCompile Include="src\hashmap.c">
-            <BuildOrder>3</BuildOrder>
-        </CppCompile>
-        <None Include="src\hashmap.h">
+        <None Include="jsonparser\dynamicarray.h">
             <BuildOrder>7</BuildOrder>
         </None>
-        <CppCompile Include="src\json.c">
-            <BuildOrder>4</BuildOrder>
+        <CppCompile Include="jsonparser\hashmap.c">
+            <BuildOrder>3</BuildOrder>
         </CppCompile>
-        <None Include="src\json.h">
+        <None Include="jsonparser\hashmap.h">
             <BuildOrder>8</BuildOrder>
         </None>
-        <CppCompile Include="src\strstream.c">
-            <BuildOrder>5</BuildOrder>
+        <CppCompile Include="jsonparser\json.c">
+            <BuildOrder>4</BuildOrder>
         </CppCompile>
-        <None Include="src\strstream.h">
+        <None Include="jsonparser\json.h">
             <BuildOrder>9</BuildOrder>
+        </None>
+        <CppCompile Include="jsonparser\strstream.c">
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <None Include="jsonparser\strstream.h">
+            <BuildOrder>10</BuildOrder>
         </None>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -164,6 +170,11 @@
                     <ProjectProperties Name="VerifyPackages">True</ProjectProperties>
                     <ProjectProperties Name="IndexFiles">False</ProjectProperties>
                 </ProjectProperties>
+                <Folders/>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k270.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp270.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                </Excluded_Packages>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="3">
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32270mt.dll" Class="DependencyModule">
@@ -171,12 +182,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgcrtl.dylib" Class="DependencyModule">
-                    <Platform Name="OSX64">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32270.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -192,11 +203,6 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
-                    <Platform Name="Win32">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32270.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -218,6 +224,12 @@
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libpcre.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName=".\Win32\Debug\converter32.dll" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>converter32.dll</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -253,9 +265,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\converter32.dll" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>converter32.dll</RemoteName>
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgcrtl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

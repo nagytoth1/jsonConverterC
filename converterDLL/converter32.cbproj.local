@@ -3,18 +3,36 @@
 	<Transactions>
     <Transaction>2023/04/03 12:35:39.000.163,=C:\Users\Bence\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
     <Transaction>2023/04/03 12:35:39.000.199,=C:\Users\Bence\Documents\Embarcadero\Studio\Projects\File1.c</Transaction>
-    <Transaction>2023/04/03 12:37:02.000.966,C:\Users\Bence\Documents\Embarcadero\Studio\Projects\File1.c=C:\Users\Bence\Documents\DLL\converterDLL\converterImp.c</Transaction>
-    <Transaction>2023/04/03 12:37:05.000.903,C:\Users\Bence\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\Bence\Documents\DLL\converterDLL\converter.h</Transaction>
-    <Transaction>2023/04/03 12:37:09.000.634,C:\Users\Bence\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\Bence\Documents\DLL\converterDLL\converter.cbproj</Transaction>
+    <Transaction>2023/04/03 12:37:02.000.966,C:\Users\Bence\Documents\DLL\converterDLL\converterImp.c=C:\Users\Bence\Documents\Embarcadero\Studio\Projects\File1.c</Transaction>
+    <Transaction>2023/04/03 12:37:05.000.903,C:\Users\Bence\Documents\DLL\converterDLL\converter.h=C:\Users\Bence\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/04/03 12:37:09.000.634,C:\Users\Bence\Documents\DLL\converterDLL\converter.cbproj=C:\Users\Bence\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
     <Transaction>2023/04/03 14:32:47.000.686,=C:\Users\Bence\Documents\DLL\converterDLL\Unit1.cpp</Transaction>
-    <Transaction>2023/04/03 14:33:34.000.517,=C:\Users\Bence\Documents\DLL\converterDLL\src\strstream.c</Transaction>
     <Transaction>2023/04/03 14:33:34.000.496,=C:\Users\Bence\Documents\DLL\converterDLL\src\hashmap.c</Transaction>
+    <Transaction>2023/04/03 14:33:34.000.517,=C:\Users\Bence\Documents\DLL\converterDLL\src\strstream.c</Transaction>
     <Transaction>2023/04/03 14:33:34.000.510,=C:\Users\Bence\Documents\DLL\converterDLL\src\json.c</Transaction>
     <Transaction>2023/04/03 14:33:34.000.483,=C:\Users\Bence\Documents\DLL\converterDLL\src\dynamicarray.c</Transaction>
-    <Transaction>2023/04/03 14:33:50.000.933,=C:\Users\Bence\Documents\DLL\converterDLL\src\json.h</Transaction>
-    <Transaction>2023/04/03 14:33:50.000.940,=C:\Users\Bence\Documents\DLL\converterDLL\src\strstream.h</Transaction>
     <Transaction>2023/04/03 14:33:50.000.918,=C:\Users\Bence\Documents\DLL\converterDLL\src\dynamicarray.h</Transaction>
+    <Transaction>2023/04/03 14:33:50.000.940,=C:\Users\Bence\Documents\DLL\converterDLL\src\strstream.h</Transaction>
     <Transaction>2023/04/03 14:33:50.000.925,=C:\Users\Bence\Documents\DLL\converterDLL\src\hashmap.h</Transaction>
-    <Transaction>2023/04/04 07:07:57.000.183,C:\Users\Bence\Documents\DLL\converterDLL\converter.cbproj=C:\Users\Bence\Documents\DLL\converterDLL\converter32.cbproj</Transaction>
+    <Transaction>2023/04/03 14:33:50.000.933,=C:\Users\Bence\Documents\DLL\converterDLL\src\json.h</Transaction>
+    <Transaction>2023/04/04 07:07:57.000.183,C:\Users\Bence\Documents\DLL\converterDLL\converter32.cbproj=C:\Users\Bence\Documents\DLL\converterDLL\converter.cbproj</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.474,C:\Users\Bence\Documents\DLL\converterDLL\src\dynamicarray.c=</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.571,C:\Users\Bence\Documents\DLL\converterDLL\src\hashmap.c=</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.582,C:\Users\Bence\Documents\DLL\converterDLL\src\json.h=</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.575,C:\Users\Bence\Documents\DLL\converterDLL\src\hashmap.h=</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.527,C:\Users\Bence\Documents\DLL\converterDLL\src\dynamicarray.h=</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.590,C:\Users\Bence\Documents\DLL\converterDLL\src\strstream.h=</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.585,C:\Users\Bence\Documents\DLL\converterDLL\src\strstream.c=</Transaction>
+    <Transaction>2023/04/05 16:34:07.000.579,C:\Users\Bence\Documents\DLL\converterDLL\src\json.c=</Transaction>
+    <Transaction>2023/04/05 16:36:53.000.373,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\dynamicarray.c</Transaction>
+    <Transaction>2023/04/05 16:36:53.000.385,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\hashmap.c</Transaction>
+    <Transaction>2023/04/05 16:36:53.000.397,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\json.c</Transaction>
+    <Transaction>2023/04/05 16:36:53.000.403,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\main.c</Transaction>
+    <Transaction>2023/04/05 16:36:53.000.410,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\strstream.c</Transaction>
+    <Transaction>2023/04/05 16:37:06.000.270,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\dynamicarray.h</Transaction>
+    <Transaction>2023/04/05 16:37:06.000.330,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\strstream.h</Transaction>
+    <Transaction>2023/04/05 16:37:06.000.319,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\json.h</Transaction>
+    <Transaction>2023/04/05 16:37:06.000.308,=C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\hashmap.h</Transaction>
+    <Transaction>2023/04/05 16:37:28.000.998,C:\Users\Bence\Documents\DLL\converterDLL\jsonparser\main.c=</Transaction>
   </Transactions>
 </BorlandProject>

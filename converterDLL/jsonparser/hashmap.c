@@ -287,7 +287,7 @@ void hmap_freeDeep(hashmap *map)
         if (map->buckets[i])
         {
             hmap_freeEntryDeep(map->buckets[i]);
-            free(map->buckets[i]);
+			free(map->buckets[i]);
         }
     }
 
@@ -315,10 +315,9 @@ void hmap_freeEntryDeep(mapentry *entry)
         {
             hmap_freeEntryDeep(entry->next);
             free(entry->next);
-        }
-
-        free(entry->key);
-        free(entry->val);
+		}
+		//free(entry->key);
+		free(entry->val);
     }
 }
 
